@@ -6,6 +6,8 @@ body {
     rgb(118, 6, 166) 63.4%,
     rgba(233, 0, 64, 0.58) 100.1%
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Poppins", sans-serif;
 }
 
@@ -70,4 +72,7 @@ footer {
   font-size: 18px;
   font-family: monospace;
   color: #fff;
+}
+footer a {
+  color: #00ddff;
 }
