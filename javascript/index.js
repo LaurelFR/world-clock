@@ -1,12 +1,12 @@
 function updateTime() {
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
+    let newYorkTime = moment().tz("America/New_York");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM D, YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    newYorkDateElement.innerHTML = newYorkTime.format("MMMM D, YYYY");
+    newYorkTimeElement.innerHTML = newYorkTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -22,25 +22,14 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let hongkongElement = document.querySelector("#hong-kong");
-  if (hongkongElement) {
-    let hongkongDateElement = hongkongElement.querySelector(".date");
-    let hongkongTimeElement = hongkongElement.querySelector(".time");
-    let hongkongTime = moment().tz("Asia/Hong_Kong");
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
 
-    hongkongDateElement.innerHTML = hongkongTime.format("MMMM D, YYYY");
-    hongkongTimeElement.innerHTML = hongkongTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-  let sydneyElement = document.querySelector("#sydney");
-  if (sydneyElement) {
-    let sydneyDateElement = sydneyElement.querySelector(".date");
-    let sydneyTimeElement = sydneyElement.querySelector(".time");
-    let sydneyTime = moment().tz("Australia/Sydney");
-
-    sydneyDateElement.innerHTML = sydneyTime.format("MMMM D, YYYY");
-    sydneyTimeElement.innerHTML = sydneyTime.format(
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM D, YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -63,7 +52,7 @@ function updateCity(event) {
                     <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
                 </div>
                 <div class="time">${cityTime.format(
-                  "hh:mm:ss"
+                  "h:mm:ss"
                 )}<small> ${cityTime.format("A")}</small></div>
             </div>
             <a href="/">All cities</a>`;

@@ -1,11 +1,17 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  background: linear-gradient(
+    179.2deg,
+    rgb(34, 34, 34) 0%,
+    rgb(8, 0, 153) 29.7%,
+    rgb(118, 6, 166) 63.4%,
+    rgba(233, 0, 64, 0.58) 100.1%
+  );
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
 }
 
@@ -23,9 +29,9 @@ select {
 }
 
 .container {
-  max-width: 600px;
-  margin: 60px auto;
-  background: #fff;
+  max-width: 550px;
+  margin: 40px auto 30px;
+  background: rgba(249, 247, 254, 0.9);
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -49,7 +55,7 @@ select {
 
 .time {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .time small {
@@ -59,7 +65,9 @@ select {
 }
 
 footer {
+  margin-bottom: 30px;
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  font-family: monospace;
+  color: #fff;
 }

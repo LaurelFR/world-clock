@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script
@@ -13,19 +17,25 @@
 
 <body>
     <div class="container">
-        <h1>World Clock</h1>
+        <h1>🌎 World Clock</h1>
         <select name="cities" id="city">
             <option value="">Select a city</option>
-            <option value="current">My current location</option>
+            <option value="current">My current location 📍</option>
+            <option value="America/Chicago">Chicago 🇺🇸</option>
+            <option value="Asia/Hong_Kong">Hong Kong 🇭🇰</option>
+            <option value="Europe/Kiev">Kyiv 🇺🇦</option>
+            <option value="Eurple/Lisbon">Lisbon 🇵🇹</option>
             <option value="Europe/London">London 🇬🇧</option>
-            <option value="America/New_York">New York 🇺🇸</option>
-            <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+            <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
+            <option value="Asia/Seoul">Seoul 🇰🇷</option>
+            <option value="Australia/Sydney">Sydney 🇦🇺</option>
+
         </select>
 
         <div id="cities">
-            <div class="city" id="los-angeles">
+            <div class="city" id="new-york">
                 <div>
-                    <h2>Los Angeles 🇺🇸</h2>
+                    <h2>New York 🇺🇸</h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>
@@ -37,16 +47,9 @@
                 </div>
                 <div class="time"></div>
             </div>
-            <div class="city" id="hong-kong">
+            <div class="city" id="tokyo">
                 <div>
-                    <h2>Hong Kong 🇭🇰</h2>
-                    <div class="date"></div>
-                </div>
-                <div class="time"></div>
-            </div>
-            <div class="city" id="sydney">
-                <div>
-                    <h2>Sydney 🇦🇺</h2>
+                    <h2>Tokyo 🇯🇵</h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>
