@@ -76,3 +76,13 @@ footer {
 footer a {
   color: #00ddff;
 }
+
+@media (max-width: 576px) {
+  .city {
+    flex-direction: column;
+    text-align: center;
+  }
+  .time {
+    font-size: 40px;
+  }
+}
